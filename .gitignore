@@ -1,0 +1,26 @@
+# Retained private campaign export; do not publish by default.
+consolidated_summaries/
+
+# Vulnerable source archives and raw proof artifacts.
+*.tar
+*.tar.gz
+*.tgz
+**/proof/
+**/attack/
+
+# Submission helpers and local records.
+submit.sh
+status.json
+
+# Secrets and local environment files.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operating-system noise.
+.DS_Store
+Thumbs.db
+
