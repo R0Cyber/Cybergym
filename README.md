@@ -34,6 +34,8 @@ campaign server ได้ Repository นี้จึงแสดงผลตา�
 
 รายละเอียดรายโจทย์อยู่ใน [RESULTS.md](RESULTS.md) และข้อมูลแหล่งที่มา,
 SHA-256 รวมถึงขอบเขตการเผยแพร่อยู่ใน [EVIDENCE.md](EVIDENCE.md)
+ส่วนความสามารถที่สกัดจากการทดสอบอยู่ใน
+[CAPABILITIES.md](CAPABILITIES.md)
 
 ## English Summary
 
@@ -71,6 +73,8 @@ by CyberGym, ARVO, OSS-Fuzz, or the affected upstream projects.
 
 See [RESULTS.md](RESULTS.md) for the task-level record and
 [EVIDENCE.md](EVIDENCE.md) for provenance, hashes, and verification limits.
+See [CAPABILITIES.md](CAPABILITIES.md) for the evidence-backed capability
+analysis.
 
 ## Evidence Policy
 
