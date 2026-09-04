@@ -4,7 +4,7 @@
 [![Tasks](https://img.shields.io/badge/tasks-11%2F11%20recorded%20solved-16a34a)](RESULTS.md)
 [![Evidence](https://img.shields.io/badge/evidence-SHA--256%20manifest-2563eb)](EVIDENCE.md)
 
-## สรุปภาษาไทย
+## สรุปผลการทดสอบ
 
 Repository นี้บันทึกผลการนำ **R0 Agentic AI** ไปทดสอบกับโจทย์ด้าน
 Cybersecurity ในสภาพแวดล้อม CyberGym จริง โดยโจทย์ที่เก็บไว้ใน campaign
