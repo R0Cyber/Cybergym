@@ -4,6 +4,39 @@
 [![Tasks](https://img.shields.io/badge/tasks-11%2F11%20recorded%20solved-16a34a)](RESULTS.md)
 [![Evidence](https://img.shields.io/badge/evidence-SHA--256%20manifest-2563eb)](EVIDENCE.md)
 
+## สรุปภาษาไทย
+
+Repository นี้บันทึกผลการนำ **R0 Agentic AI** ไปทดสอบกับโจทย์ด้าน
+Cybersecurity ในสภาพแวดล้อม CyberGym จริง โดยโจทย์ที่เก็บไว้ใน campaign
+ประกอบด้วยกรณีจาก ARVO และ OSS-Fuzz
+
+ผลจากหลักฐานที่บันทึกไว้เมื่อวันที่ **3 กันยายน 2026** มีดังนี้:
+
+- มีพื้นที่ทำงานทั้งหมด **11 โจทย์**
+- ระบบบันทึกสถานะ `solved` ครบ **11/11 โจทย์**
+- มีการส่งคำตอบรวม **17 ครั้ง** และถูกบันทึกว่าสำเร็จทั้ง 17 ครั้ง
+- Winning input ของทุกโจทย์ทำให้ vulnerable target คืนค่า non-zero exit code
+  เป็น `255`
+
+R0 ถูกใช้เพื่อช่วยอ่านและวิเคราะห์ codebase ที่ไม่คุ้นเคย ติดตามเส้นทางของ
+ช่องโหว่ ออกแบบ input สำหรับกระตุ้นปัญหา วางแผนขั้นตอน และบันทึกเหตุผลทาง
+เทคนิค โดยมนุษย์ยังเป็นผู้ตรวจสอบผลลัพธ์และรับผิดชอบการดำเนินการทั้งหมด
+
+คำว่า **solved** ในรายงานนี้หมายถึงสถานะที่บันทึกโดย campaign หลัง input
+สามารถกระตุ้น vulnerable target ได้ ไม่ได้หมายความว่า R0 แก้ไข upstream
+project สำเร็จ หรือได้รับการรับรองอย่างเป็นทางการจาก CyberGym, ARVO,
+OSS-Fuzz หรือเจ้าของโครงการต้นทาง
+
+หลักฐาน patched-run ยังไม่สมบูรณ์: 5 โจทย์ไม่มีค่า `fix_exit_code` ที่บันทึกไว้
+และอีก 6 โจทย์มีค่า `255` ขณะที่การตรวจซ้ำภายหลังไม่สามารถเชื่อมต่อ local
+campaign server ได้ Repository นี้จึงแสดงผลตามหลักฐานที่มีจริง พร้อมระบุ
+ข้อจำกัดโดยไม่ขยายผลเกินข้อมูลที่ตรวจสอบได้
+
+รายละเอียดรายโจทย์อยู่ใน [RESULTS.md](RESULTS.md) และข้อมูลแหล่งที่มา,
+SHA-256 รวมถึงขอบเขตการเผยแพร่อยู่ใน [EVIDENCE.md](EVIDENCE.md)
+
+## English Summary
+
 This repository documents a real evaluation campaign in which **R0 Agentic AI**
 was used to investigate and produce triggering inputs for CyberGym vulnerability
 tasks derived from ARVO and OSS-Fuzz cases.
@@ -76,4 +109,3 @@ R0 is an Agentic AI initiative focused on practical cybersecurity operations,
 research, automation, and human–AI collaboration.
 
 Website: [r0cyber.com](https://r0cyber.com)
-
